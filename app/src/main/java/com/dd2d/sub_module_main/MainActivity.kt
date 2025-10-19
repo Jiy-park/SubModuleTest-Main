@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.dd2d.sub_module_main.ui.theme.SubModuleMainTheme
+import com.dd2d.submodule.v1.Greeting2
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -42,6 +43,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
   SubModuleMainTheme {
+
+    Greeting2().greeting()
     Greeting("Android")
   }
 }

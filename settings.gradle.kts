@@ -21,3 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sub-Module-Main"
 include(":app")
+
+include(":subtree")
+project(":subtree").projectDir = file("subtree/submodule/v1")
+
